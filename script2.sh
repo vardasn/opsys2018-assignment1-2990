@@ -20,9 +20,7 @@ while read line;do
 			git -C assignments clone "$tempLine" >/dev/null 2>&1 && echo "$tempLine: Cloning OK" || echo "$tempLine: Cloning FAILED" >&2
 		fi
 	done <$temp
-	#echo "/////FILE READ END/////"
-	#echo " "
-	#echo " "
+
 done <$pathsOfFiles
 
 for dir in assignments/*;do
